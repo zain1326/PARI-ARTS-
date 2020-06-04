@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
     <title>SIGN UP</title>
 </head>
-<body class="b">
+<body style="background-image: url(back.jpg); background-repeat: no-repeat;background-size: cover">
         <nav style="width: 100%">
 
                 <div class="logo-name">
@@ -66,7 +66,7 @@
               </nav>
   
               <div class="back">
-    <form onsubmit="return signup()" id="f" class="text-center border border-light p-5 fs" method="post" action="index.html">
+    <form onsubmit="return signup()" id="f" class="text-center border border-light p-5 fs" method="post" action="index.html" style="margin-top:20px;">
     
         <p class="h4 mb-4" style="font-size: 30px;">Sign up</p>
         <hr>
@@ -93,7 +93,7 @@
         <!-- Sign up button -->
         <button  class="btn btn-info my-4 btn-block" type="submit">SIGNUP</button>
             <label for="signup" style="display: block;text-align: left">Already Signup?</label>
-        <a class="log" href="index.html" >LOGIN</a>
+        <a class="log" href="login.html" >LOGIN</a>
         </form>
     </div>
         <!-- this is footer area -->
@@ -122,10 +122,10 @@
      
                  <div class="footer-2" style="margin-top: 50px;">
                      <h3 style="font-size: 22px;">CUSTMER HELP</h3>
-                     <form action="#">
+                    
                     <textarea style="margin-top: 50px;" name="help" cols="35" rows="2" placeholder="YOUR PROBLEM"></textarea>
-                    <button style="width: 265px"  class="btn btn-info my-4 btn-block" type="submit">SUBMIT</button>
-                 </form>
+                    <button style="width: 265px"  class="btn btn-info my-4 btn-block" type="submit" onclick="problem()">SUBMIT</button>
+    
                  </div>
                  <div class="footer-3" >
                   <h3>Connect With Us</h3>
@@ -145,5 +145,7 @@
            <script src="jquery.min.js"></script>
         <script src="popper.min.js"></script>
         <script src="bootstrap.min.js"></script>
+        <script src="app.js"></script>
+        
 </body>
 </html>
