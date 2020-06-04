@@ -12,6 +12,12 @@
 </head>
 
 <body style="margin:none" id="body">
+        <div class="search-div" id="search-b">
+                <i class="fa fa-times" onclick="hides()"></i>
+                <div>            
+                <input type="search" placeholder="Search">
+            </div>
+            </div>
     <i id="chat" class="far fa-comment-dots" style="position: fixed; bottom: 80px;right: 10px;font-size: 35px; z-index: 300; color: #ff007f;"></i>
    <nav>
 
@@ -20,9 +26,10 @@
       <h1>PARI ARTS</h1>
     </div>
 
-    <div class="search"><input type="search" placeholder="SEARCH">
-     
-     <span id="help">Need Help<i class="fas fa-question"></i>
+    <div class="search">
+    <input type="search" placeholder="SEARCH">
+    <i class="fas fa-search ser" style="color: white;font-size: 22px;" onclick="shows()"></i>
+     <span id="help"> <span class="txt-h"> Need Help </span><i class="fas fa-question"></i>
                <ul class="about-drop">
                    <li>WHATSAPP : 0305-7481756
                        <i style="color: lightgreen;font-size: 20px;float: right" class="fab fa-whatsapp"></i>
@@ -42,13 +49,15 @@
    </div>
 
     <ul class="shop">
-     <li class="shop-d">COLLECTION<i class="fas fa-arrow-down"></i>
+     <li> <a href="#" class="active"> <i class="fas fa-home"></i></a></li>        
+     <li class="shop-d"> <span> COLLECTION<i class="fas fa-arrow-down"></i></span>
+        <img class="img-nav" src="./IMGES/dress-transparent-png-5.png">       
        <ul class="about-drop t">
            <li>
              <a href="#">
              2020 REPLICA COLLECTION
            </a>
-           <i><img src="./IMGES/dress-transparent-png-5.png"></i>
+           <img src="./IMGES/dress-transparent-png-5.png">
               
            </li>
           
@@ -56,13 +65,13 @@
                <a href="#">
                EMBRIODERY COLLECTION
              </a>
-             <i><img src="./IMGES/dress-transparent-png-5.png"></i>
+             <img src="./IMGES/dress-transparent-png-5.png">
                 
              </li>
            
        </ul>
      </li>
-      <li> <a href="signup.html"> <i class="fas fa-user"></i></a></li>
+      <li> <a href="login.html"> <i class="fas fa-user"></i></a></li>
       <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
     </ul>
 
@@ -292,6 +301,45 @@
                   </div>
          </div>
     
+             <!-- this is services area -->
+             
+             <div class="f-c-header">
+                    <div class="logo">
+                      <img src="./IMGES/serv.png" alt="pari emb" style="width: 100px;">
+                      <h1>OUR <b>SERVICES</b></h1>
+                    </div>
+                    <p> Which <b>Services</b> we <b>provide</b> to our <b>customers</b>?</p>
+                 </div>
+
+                      <div class="services">
+                          <div class="serv-card" style="margin-left: 5px;">
+                            <i class="fas fa-shipping-fast" style="margin-top: 45px;"></i>
+                            <h3 style="margin-top: 20px;">100% FREE <b> SHIPPING </b></h3>
+                          </div>
+                          <div class="serv-card">
+                                <i class="fas fa-exchange-alt" style="margin-top: 45px;"></i>
+                                <h3 style="margin-top: 23px;">3 DAYS <b> REPLACEMENT </b></h3>
+                              </div>
+                              <div class="serv-card">
+                                    <i class="fas fa-money-bill-wave" style="margin-top: 45px;"></i>
+                                    <h3 style="margin-top: 25px;" >CASH on <b> DILIVERY </b></h3>
+                                  </div>
+                                  <div class="serv-card">
+                                        <i class="fas fa-diagnoses" style="margin-top: 40px;"></i>
+                                        <h3 style="margin-top: 30px;">FABRIC <b> WARRANTY </b></h3>
+                                      </div>
+                                      <div class="serv-card">
+                                            <i class="far fa-clock" style="margin-top: 40px;"></i>
+                                            <h3 style="margin-top: 28px;">24 Hours <b> DILIVERY </b></h3>
+                                          </div>
+                      </div>
+                      <div class="subscribe">
+                      <h4> <b style="color: #ff007f">Subscribe</b> to get latest updates!</h4>
+                      <div class="sub-btn">
+                          <input type="email" placeholder="Enter Email" class="input">
+                          <input class="butn" type="submit" value="Subscribe">
+                        </div>
+                    </div>
          <!-- this is footer area -->
          <footer>
            <img src="./IMGES/f.png" alt="">
@@ -342,7 +390,7 @@
                         <div class="f-info">
                         <h1>WELCOME TO <b>PARI ARTS</b></h1>
                         <P>Pari Arts the palace of cloth.we have new &amp latest Embriodery &amp Printed suite collection.</P>
-                        <a class="log" href="index.html" style="color: #ff007f; background-color: white; padding: 5px; " >LOGIN</a>
+                        <a class="log" href="login.html" style="color: #ff007f; background-color: white; padding: 5px; " >LOGIN</a>
                     </div>
                 </div>
             <form onsubmit="return signup()" id="f" class="text-center border border-light p-5 fs fs2" method="post" action="index.html">
@@ -371,7 +419,11 @@
                 <label class="custom-control-label" for="defaultRegisterFormNewsletter">Agree Terms and Condition!</label></div>
                 <!-- Sign up button -->
                 <button  class="btn btn-info my-4 btn-block" type="submit">SIGNUP</button>
-                   
+                <div class="otherlog">
+                        <a href="https://www.google.com" target="_blank"><i style="color: green" class="fab fa-google"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i style="color: royalblue" class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>   
+                    </div> 
                 </form>
             </div>
             <script src="app.js"></script>
