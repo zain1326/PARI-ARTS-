@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WHISH-LIST</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap.min.css">         
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+        <div class="search-div" id="search-b">
+                <i class="fa fa-times" onclick="hides()"></i>
+                <div>            
+                <input type="search" placeholder="Search">
+            </div>
+            </div>
+    <i id="chat" class="far fa-comment-dots" style="position: fixed; bottom: 80px;right: 10px;font-size: 35px; z-index: 300; color: #ff007f;"></i>
+   <nav>
+
+    <div class="logo-name">
+      <img src="./IMGES/LOGO.png" alt="">
+      <h1>PARI ARTS</h1>
+    </div>
+
+    <div class="search">
+    <input type="search" placeholder="SEARCH">
+    <i class="fas fa-search ser" style="color: white;font-size: 22px;" onclick="shows()"></i>
+     <span id="help"> <span class="txt-h"> Need Help </span><i class="fas fa-question"></i>
+               <ul class="about-drop">
+                   <li>WHATSAPP : 0305-7481756
+                       <i style="color: lightgreen;font-size: 20px;float: right" class="fab fa-whatsapp"></i>
+                   </li>
+                  
+                   <li>CALL US : 03057481756
+                       <i style="color: white;font-size: 20px;float: right" class="fas fa-phone"></i>
+                   </li>
+                   <li>CHAT : our team will help you
+                       <i style="color: lightgreen;font-size: 20px;float: right" class="far fa-comment-dots"></i>
+                   </li>
+                   <li>EMAIL:<a style="text-decoration: none;" href="mailto:ranazain1326@gmail.com"> ranazain1326@gmail.com</a>
+                     <i style="color: white;font-size: 20px;float: right" class="far fa-paper-plane"></i>
+                   </li>
+               </ul>
+     </span>
+   </div>
+
+    <ul class="shop">
+     <li> <a href="index.html"> <i class="fas fa-home"></i></a></li>        
+     <li class="shop-d"> <span> COLLECTION<i class="fas fa-arrow-down"></i></span>
+        <img class="img-nav" src="./IMGES/dress-transparent-png-5.png">       
+       <ul class="about-drop t">
+           <li>
+             <a href="print-product.html">
+             2020 REPLICA COLLECTION
+           </a>
+           <img src="./IMGES/dress-transparent-png-5.png">
+              
+           </li>
+          
+           <li>
+               <a href="Emb-product.html">
+               EMBRIODERY COLLECTION
+             </a>
+             <img src="./IMGES/dress-transparent-png-5.png">
+                
+             </li>
+           
+       </ul>
+     </li>
+      <li> <a href="login.html"> <i class="fas fa-user"></i></a></li>
+      <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+
+  </nav>
+
+                  <!-- this is chart area -->
+            
+                  <div class="chart"> 
+                        <div class="char-card">
+                                <h2>EMBRIODERY <b> KURTI </b> 2020</h2>
+                            <img src="./IMGES/emb/KURTI 2020/1.jpg" alt="img">
+                            <span>Price: <b>1600.RS</b></span>
+                            <span>Warranty: <b>6 Month</b></span> 
+                            <span>Color: <b>Gray</b></span> 
+                            <span>Quantity: <input type="number" placeholder="Quantity" value="1"></span>
+                            <span class="order">Order Now</span>
+                            <i class="fa fa-times"></i>                                             
+                        </div>
+                   </div>
+
+
+
+                <!-- this is footer area -->
+
+                <div class="subscribe">
+                        <h4> <b style="color: #ff007f">Subscribe</b> to get latest updates!</h4>
+                        <div class="sub-btn">
+                            <input type="email" placeholder="Enter Email" class="input">
+                            <input class="butn" type="submit" value="Subscribe">
+                          </div>
+                      </div>
+
+
+                               <!-- this is footer area -->
+            
+                    <footer style="margin-top: 150px !important;">
+                            <img src="./IMGES/f.png" alt="">
+                             <div class="footer-1" style="margin-top: -10px;">
+                                 <p>Head Office,<br>
+                                  <i class="fa fa-location-arrow"></i>
+                                  A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+                                  <ul>
+                                      <li>
+                                      <i class="fab fa-whatsapp" aria-hidden="true" ></i>
+                                       WHATSAPP : 0305-7481756
+                                      </li>
+                                      <li>
+                                          <i class="fa fa-phone" aria-hidden="true" ></i>
+                                           CELL : 0305-7481756
+                                      </li>
+                                      <li>
+                                          <i class="fa fa-envelope" aria-hidden="true" ></i>
+                                           ranazain1326@gmail.com
+                                      </li>
+                                  </ul>
+                             </div>
+                 
+                             <div class="footer-2" style="margin-top: 50px;">
+                                 <h3 style="font-size: 22px;">CUSTMER HELP</h3>
+                                
+                                <textarea style="margin-top: 50px;" name="help" cols="35" rows="2" placeholder="YOUR PROBLEM"></textarea>
+                                <button style="width: 265px"  class="btn btn-info my-4 btn-block" type="submit" onclick="problem()">SUBMIT</button>
+                
+                             </div>
+                             <div class="footer-3" >
+                              <h3>Connect With Us</h3>
+                              <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                                  <li>
+                                      <a href="https://www.facebook.com" target="_blank"><i  class="fab fa-facebook-square"></i></a>
+                                  </li>
+                                          <li><a href="https://twitter.com" target="_blank"><i style="color: royalblue" class="fab fa-twitter"></i></a></li>
+                                          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                          <li><a href="https://www.youtube.com" target="_blank"><i style="color: rgb(209, 10, 10)" class="fab fa-youtube"></i></a></li>
+                              </ul>
+                             </div>
+                             <div class="copyright">
+                             Copyright © 2020 PARI ARTS
+                          </div>
+                         </footer>
+
+  <script src="jquery.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

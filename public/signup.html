@@ -11,64 +11,72 @@
 </head>
 <body style="background-image: url(back.webp); background-repeat: no-repeat;background-size: cover">
     
-        <nav style="width: 100%">
+    <div class="search-div" id="search-b">
+        <i class="fa fa-times" onclick="hides()"></i>
+        <div>            
+        <input type="search" placeholder="Search">
+    </div>
+    </div>
+<i id="chat" class="far fa-comment-dots" style="position: fixed; bottom: 80px;right: 10px;font-size: 35px; z-index: 300; color: #ff007f;"></i>
+<nav>
 
-                <div class="logo-name">
-                  <img src="./IMGES/LOGO.png" alt="">
-                  <h1>PARI ARTS</h1>
-                </div>
-            
-                <div class="search"><input type="search" placeholder="SEARCH">
-                 
-                 <span id="help">Need Help<i class="fas fa-question"></i>
-                           <ul class="about-drop">
-                               <li>WHATSAPP : 0305-7481756
-                                   <i style="color: lightgreen;font-size: 20px;float: right" class="fab fa-whatsapp"></i>
-                               </li>
-                              
-                               <li>CALL US : 03057481756
-                                   <i style="color: white;font-size: 20px;float: right" class="fas fa-phone"></i>
-                               </li>
-                               <li>CHAT : our team will help you
-                                   <i style="color: lightgreen;font-size: 20px;float: right" class="far fa-comment-dots"></i>
-                               </li>
-                               <li>EMAIL:<a style="text-decoration: none;" href="mailto:ranazain1326@gmail.com"> ranazain1326@gmail.com</a>
-                                 <i style="color: white;font-size: 20px;float: right" class="far fa-paper-plane"></i>
-                               </li>
-                           </ul>
-                 </span>
-               </div>
-            
-                <ul class="shop">
-     <li><a href="index.html"> <i class="fas fa-home"></i></a></li>                    
-                 <li class="shop-d">COLLECTION<i class="fas fa-arrow-down"></i>
-                   <ul class="about-drop t">
-                       <li>
-                         <a href="#">
-                         2020 REPLICA COLLECTION
-                       </a>
-                       <i><img src="./IMGES/dress-transparent-png-5.png"></i>
-                          
-                       </li>
-                      
-                       <li>
-                           <a href="#">
-                           EMBRIODERY COLLECTION
-                         </a>
-                         <i><img src="./IMGES/dress-transparent-png-5.png"></i>
-                            
-                         </li>
-                       
-                   </ul>
-                 </li>
-                  <li> <a href="login.html"> <i class="fas fa-user"></i></a></li>
-                  <li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
-            
-              </nav>
+<div class="logo-name">
+<img src="./IMGES/LOGO.png" alt="">
+<h1>PARI ARTS</h1>
+</div>
+
+<div class="search">
+<input type="search" placeholder="SEARCH">
+<i class="fas fa-search ser" style="color: white;font-size: 22px;" onclick="shows()"></i>
+<span id="help"> <span class="txt-h"> Need Help </span><i class="fas fa-question"></i>
+       <ul class="about-drop">
+           <li>WHATSAPP : 0305-7481756
+               <i style="color: lightgreen;font-size: 20px;float: right" class="fab fa-whatsapp"></i>
+           </li>
+          
+           <li>CALL US : 03057481756
+               <i style="color: white;font-size: 20px;float: right" class="fas fa-phone"></i>
+           </li>
+           <li>CHAT : our team will help you
+               <i style="color: lightgreen;font-size: 20px;float: right" class="far fa-comment-dots"></i>
+           </li>
+           <li>EMAIL:<a style="text-decoration: none;" href="mailto:ranazain1326@gmail.com"> ranazain1326@gmail.com</a>
+             <i style="color: white;font-size: 20px;float: right" class="far fa-paper-plane"></i>
+           </li>
+       </ul>
+</span>
+</div>
+
+<ul class="shop">
+<li> <a href="index.html"> <i class="fas fa-home"></i></a></li>        
+<li class="shop-d"> <span> COLLECTION<i class="fas fa-arrow-down"></i></span>
+<img class="img-nav" src="./IMGES/dress-transparent-png-5.png">       
+<ul class="about-drop t">
+   <li>
+     <a href="#">
+     2020 REPLICA COLLECTION
+   </a>
+   <img src="./IMGES/dress-transparent-png-5.png">
+      
+   </li>
   
-              <div class="back">
-    <form onsubmit="return signup()" id="f" class="text-center border border-light p-5 fs" method="post" action="index.html" style="margin-top:20px;">
+   <li>
+       <a href="#">
+       EMBRIODERY COLLECTION
+     </a>
+     <img src="./IMGES/dress-transparent-png-5.png">
+        
+     </li>
+   
+</ul>
+</li>
+<li> <a href="login.html"> <i class="fas fa-user"></i></a></li>
+<li> <a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+</ul>
+
+</nav>
+  
+    <form onsubmit="return signup()" id="f" class="text-center border border-light p-5 fs" method="post" action="index.html" style="margin-top:20px; height: 540px;">
     
         <p class="h4 mb-4" style="font-size: 30px;">Sign up</p>
         <hr>
@@ -91,7 +99,7 @@
          <br>
         <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter" required>
-        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Agree Terms and Condition!</label></div>
+        <label class="custom-control-label agree" for="defaultRegisterFormNewsletter">Agree Terms and Condition!</label></div>
         <!-- Sign up button -->
         <button  class="btn btn-info my-4 btn-block" type="submit">SIGNUP</button>
         <div class="otherlog">
@@ -103,8 +111,6 @@
         <a class="log" href="login.html" >LOGIN</a>
         
         </form>
-
-    </div>
         <!-- this is footer area -->
 
         <footer style="margin-top: 100px !important;">
