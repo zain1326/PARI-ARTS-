@@ -2292,41 +2292,128 @@ footer{
 
 .chart{
 	display: flex;
-	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
 	margin-top: 50px;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .char-card{
-	width: 80%;
+	width: 90%;
 	padding: 10px;
-	text-align: center;
 	font-size: 18px;
-	background-color: white !important;
-	border-radius: 10px;
-	position: relative;
 	overflow: hidden;
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	background-color: white !important;
+}
+.char-card .cartInfo{
+	height: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 54px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .char-card span{
 	margin: 5px;
 }
 .char-card h2{
-	display: inline-block;
-	margin: 0 !important;
-	position: absolute;
 	top: 10px;
-    left: 35%;
+	left: 35%;
+	position: absolute;
+	margin: 0 !important;
+	display: inline-block;
+}
+/* Responsive .cart */
+@media screen and (max-width:727px){
+	.char-card h2{
+		left: 40%;
+		font-size: 25px;
+	}	
+}
+@media screen and (max-width:638px){
+	.char-card h2{
+		left: 46%;
+		font-size: 20px;
+	}	
+	.char-card span{
+		font-size: medium;
+	}
+}
+@media screen and (max-width:586px){
+	.char-card h2{
+		left: 48%;
+		font-size: 17px;
+		font-weight: bold;
+	}	
+	.char-card span{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:531px){
+	.char-card h2{
+		left: 0;
+		right: 0;
+		font-size: 20px;
+		text-align: center;
+	}	
+	.char-card span{
+		font-size: 16px;
+	}
+	.char-card img{
+		margin-top: 30px
+	}
+}
+@media screen and (max-width:407px){
+	.char-card .cartInfo{
+		height: 90%;
+		margin-top: 35px;
+		/* background-color: #25272e; */
+	}
+	.char-card img{
+		margin-top: 40px;
+		width: 150px !important;
+	}
+	.char-card span{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width:350px){
+	.char-card h2{
+		font-size: 16px;
+	}	
+	.char-card span{
+		font-size: small;
+	}	
+}
+@media screen and (max-width:325px){
+	.char-card{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width:296px){
+	.char-card h2{
+		font-size: small;
+	}
+	.char-card img{
+		width: 120px !important;
+	}
 }
 .char-card i{
-	margin: 0 !important;
-	position: absolute;
 	top: 0;
 	right: 0;
-	font-size: 30px;
-	background-color: #ff007f;
 	padding: 8px;
 	color: white;
+	font-size:20px;
+	position: absolute;
+	margin: 0 !important;
+	background-color: #ff007f;
 	border-bottom-left-radius: 30px;
 }
 .order{
@@ -2344,6 +2431,7 @@ footer{
 	color: #ff007f;
 }
 .char-card img{
+	float: left;
 	width: 200px;
 }
 .char-card input{
